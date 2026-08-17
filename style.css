@@ -1,0 +1,1578 @@
+/* =====================================================
+   BODYMASK PATTY
+   LUXURY PINK THEME
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Prompt", sans-serif;
+
+    background: #fff9fb;
+
+    color: #713747;
+
+    overflow-x: hidden;
+}
+
+
+:root {
+
+    --pink: #d9637f;
+
+    --pink-dark: #ad405e;
+
+    --pink-light: #f9dce5;
+
+    --rose: #9d3d57;
+
+    --gold: #c79b62;
+
+    --cream: #fffafb;
+
+    --shadow:
+        0 20px 60px
+        rgba(130, 50, 70, .10);
+
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background:
+        rgba(255,250,251,.85);
+
+    backdrop-filter: blur(20px);
+
+    border-bottom:
+        1px solid
+        rgba(180,80,110,.12);
+}
+
+
+.navbar {
+
+    width: 90%;
+
+    max-width: 1250px;
+
+    height: 82px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.logo {
+
+    text-decoration: none;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 29px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    color: var(--rose);
+}
+
+
+.logo span {
+
+    display: block;
+
+    text-align: center;
+
+    margin-top: 5px;
+
+    font-family: "Prompt";
+
+    font-size: 9px;
+
+    letter-spacing: 6px;
+
+    color: var(--gold);
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 35px;
+}
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: #693845;
+
+    transition: .3s;
+}
+
+
+nav a:hover {
+
+    color: var(--pink);
+
+}
+
+
+.cart {
+
+    position: relative;
+
+    font-size: 23px;
+
+    cursor: pointer;
+}
+
+
+#cartCount {
+
+    position: absolute;
+
+    top: -10px;
+
+    right: -12px;
+
+    width: 21px;
+
+    height: 21px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--pink-dark);
+
+    color: white;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    position: relative;
+
+    min-height: 650px;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 75% 40%,
+            #ffd9e4,
+            transparent 32%
+        ),
+
+        linear-gradient(
+            135deg,
+            #fffafb,
+            #fdebf1
+        );
+}
+
+
+.hero-content {
+
+    width: 90%;
+
+    max-width: 1250px;
+
+    min-height: 650px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+.tag {
+
+    display: inline-block;
+
+    padding: 9px 22px;
+
+    border: 1px solid #e8a9bb;
+
+    border-radius: 30px;
+
+    color: var(--rose);
+
+    letter-spacing: 4px;
+
+    font-size: 11px;
+
+    background:
+        rgba(255,255,255,.45);
+}
+
+
+.hero h1 {
+
+    margin-top: 22px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        clamp(60px,8vw,110px);
+
+    line-height: .9;
+
+    letter-spacing: 5px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8e304b,
+            #c45c78,
+            #8e304b
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hero h2 {
+
+    margin-top: 15px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 35px;
+
+    letter-spacing: 10px;
+
+    color: var(--gold);
+}
+
+
+.hero p {
+
+    max-width: 600px;
+
+    margin: 25px 0;
+
+    line-height: 2;
+
+    color: #76515b;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn {
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-width: 165px;
+
+    padding: 14px 28px;
+
+    margin-right: 8px;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d96b86,
+            #b84c68
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(181,72,103,.25);
+
+    transition: .35s;
+}
+
+
+.btn:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 20px 40px
+        rgba(181,72,103,.30);
+}
+
+
+.btn.outline {
+
+    background: white;
+
+    color: var(--rose);
+
+    border:
+        1px solid
+        #df8099;
+
+    box-shadow: none;
+}
+
+
+/* =====================================================
+   HERO CIRCLE
+===================================================== */
+
+.hero-circle {
+
+    position: absolute;
+
+    right: 8%;
+
+    top: 50%;
+
+    width: 375px;
+
+    height: 375px;
+
+    border-radius: 50%;
+
+    transform:
+        translateY(-50%);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+
+        radial-gradient(
+            circle at 30% 25%,
+            white,
+            transparent 15%
+        ),
+
+        radial-gradient(
+            circle,
+            #f5a9bd,
+            #df7695
+        );
+
+    border:
+        2px solid
+        rgba(198,154,97,.7);
+
+    box-shadow:
+
+        inset 0 0 50px
+        rgba(255,255,255,.7),
+
+        0 35px 80px
+        rgba(135,48,75,.18);
+
+    animation:
+        floatingCircle 5s ease-in-out infinite;
+}
+
+
+@keyframes floatingCircle {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(-50%)
+            translateY(0)
+            rotate(0deg);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-50%)
+            translateY(-18px)
+            rotate(2deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   CIRCLE RINGS
+===================================================== */
+
+.circle-ring {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(198,154,97,.4);
+
+    animation:
+        ringSpin 18s linear infinite;
+}
+
+
+.ring-1 {
+
+    width: 430px;
+
+    height: 430px;
+}
+
+
+.ring-2 {
+
+    width: 480px;
+
+    height: 480px;
+
+    border-color:
+        rgba(217,99,127,.18);
+
+    animation-direction:
+        reverse;
+
+    animation-duration:
+        25s;
+}
+
+
+@keyframes ringSpin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =====================================================
+   PRODUCT INSIDE CIRCLE
+===================================================== */
+
+.hero-product {
+
+    position: relative;
+
+    width: 175px;
+
+    height: 225px;
+
+    border-radius:
+        25px 25px 18px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #e986a1,
+            #fff1f5 45%,
+            #e37c98
+        );
+
+    box-shadow:
+
+        inset 15px 0 25px
+        rgba(255,255,255,.4),
+
+        0 25px 45px
+        rgba(100,30,50,.20);
+
+    animation:
+        productFloat 4s ease-in-out infinite;
+}
+
+
+.hero-product::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -10px;
+
+    width: 100%;
+
+    height: 12px;
+
+    border-radius: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b97b3e,
+            #f3d49e,
+            #ae7035
+        );
+}
+
+
+.product-brand {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 21px;
+
+    letter-spacing: 3px;
+
+    color: #a13e59;
+}
+
+
+.hero-product span {
+
+    position: absolute;
+
+    bottom: 32px;
+
+    font-size: 10px;
+
+    letter-spacing: 6px;
+
+    color: var(--gold);
+}
+
+
+@keyframes productFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+/* =====================================================
+   FLOATING ORBS
+===================================================== */
+
+.floating-orb {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            white,
+            #f3b1c3
+        );
+
+    box-shadow:
+        0 10px 30px
+        rgba(175,74,103,.15);
+
+    animation:
+        orbFloat 5s ease-in-out infinite;
+}
+
+
+.orb-1 {
+
+    width: 25px;
+
+    height: 25px;
+
+    top: 15%;
+
+    right: 22%;
+}
+
+
+.orb-2 {
+
+    width: 14px;
+
+    height: 14px;
+
+    bottom: 20%;
+
+    left: 15%;
+
+    animation-delay: 1s;
+}
+
+
+.orb-3 {
+
+    width: 35px;
+
+    height: 35px;
+
+    top: 70%;
+
+    right: 5%;
+
+    animation-delay: 2s;
+}
+
+
+@keyframes orbFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+}
+
+
+/* =====================================================
+   GENERAL SECTION
+===================================================== */
+
+section {
+
+    padding: 90px 0;
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.title {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.title small {
+
+    color: var(--gold);
+
+    letter-spacing: 5px;
+
+    font-size: 12px;
+}
+
+
+.title h2 {
+
+    margin-top: 5px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 43px;
+
+    color: var(--rose);
+}
+
+
+.title p {
+
+    margin-top: 8px;
+
+    color: #98717b;
+}
+
+
+/* =====================================================
+   CATEGORY
+===================================================== */
+
+.categories {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 40px;
+}
+
+
+.categories button {
+
+    padding: 10px 23px;
+
+    border-radius: 30px;
+
+    border:
+        1px solid #e7a9ba;
+
+    background: white;
+
+    color: var(--rose);
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+
+.categories button:hover {
+
+    color: white;
+
+    background:
+        var(--pink);
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =====================================================
+   PRODUCT GRID
+===================================================== */
+
+.products {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    gap: 24px;
+}
+
+
+.product {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    border:
+        1px solid
+        rgba(202,107,132,.18);
+
+    background: white;
+
+    box-shadow:
+        0 15px 40px
+        rgba(130,50,70,.08);
+
+    transition: .45s;
+}
+
+
+.product:hover {
+
+    transform:
+        translateY(-12px);
+
+    box-shadow:
+        0 30px 80px
+        rgba(132,51,76,.18);
+}
+
+
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+.product-img {
+
+    height: 270px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+
+        radial-gradient(
+            circle,
+            white,
+            #fff0f4
+        );
+}
+
+
+.product-img::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 70px;
+
+    height: 330px;
+
+    left: -120px;
+
+    top: -30px;
+
+    transform: rotate(20deg);
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.7),
+            transparent
+        );
+
+    transition: .7s;
+}
+
+
+.product:hover
+.product-img::after {
+
+    left: 110%;
+}
+
+
+.product-img span {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100px;
+
+    height: 185px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #9f4059;
+
+    border-radius:
+        17px 17px 10px 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #e88ca4,
+            #fff0f4 45%,
+            #e687a0
+        );
+
+    box-shadow:
+        inset 12px 0 20px
+        rgba(255,255,255,.45),
+
+        0 20px 35px
+        rgba(120,40,60,.16);
+
+    transition: .4s;
+}
+
+
+.product:hover
+.product-img span {
+
+    transform:
+        translateY(-8px)
+        scale(1.04);
+}
+
+
+/* =====================================================
+   DISCOUNT
+===================================================== */
+
+.discount-badge {
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    z-index: 5;
+
+    padding: 7px 12px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #bd4d69,
+            #9c3852
+        );
+
+    color: white;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   PRODUCT INFO
+===================================================== */
+
+.product-info {
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+.product-info h3 {
+
+    min-height: 45px;
+
+    font-size: 15px;
+
+    color: #663441;
+}
+
+
+.price {
+
+    margin: 10px 0;
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    color: #d25473;
+}
+
+
+.old {
+
+    margin-left: 5px;
+
+    color: #b7a1a6;
+
+    font-size: 12px;
+
+    text-decoration: line-through;
+}
+
+
+.product-info p {
+
+    font-size: 11px;
+
+    color: var(--pink);
+}
+
+
+.product-info button {
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 11px;
+
+    border: 0;
+
+    border-radius: 30px;
+
+    background:
+        #f7d8e1;
+
+    color: var(--rose);
+
+    cursor: pointer;
+
+    transition: .35s;
+}
+
+
+.product-info button:hover {
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d86682,
+            #b94c68
+        );
+}
+
+
+/* =====================================================
+   SET
+===================================================== */
+
+.pink-section {
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f4,
+            #fffafb
+        );
+}
+
+
+.sets {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 30px;
+}
+
+
+.set-card {
+
+    padding: 38px;
+
+    border-radius: 22px;
+
+    border:
+        1px solid
+        rgba(198,154,97,.25);
+
+    background:
+        rgba(255,255,255,.8);
+
+    box-shadow:
+        var(--shadow);
+
+    transition: .4s;
+}
+
+
+.set-card:hover {
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.set-card > span {
+
+    color: var(--gold);
+
+    letter-spacing: 5px;
+
+    font-size: 12px;
+}
+
+
+.set-card h3 {
+
+    margin: 8px 0 15px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 36px;
+
+    color: var(--rose);
+}
+
+
+.set-card ul {
+
+    list-style: none;
+
+    line-height: 2.2;
+
+    color: #80535e;
+}
+
+
+.set-card h4 {
+
+    margin: 18px 0;
+
+    color: #d25774;
+
+    font-size: 28px;
+}
+
+
+.set-card del {
+
+    margin-left: 5px;
+
+    color: #aa969c;
+
+    font-size: 13px;
+}
+
+
+.set-card button {
+
+    border: 0;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d96a85,
+            #b74b67
+        );
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   SET LOGIC
+===================================================== */
+
+.logic {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 20px;
+}
+
+
+.logic > div {
+
+    padding: 30px;
+
+    min-height: 200px;
+
+    border-radius: 18px;
+
+    border:
+        1px solid
+        rgba(200,104,130,.18);
+
+    background:
+        linear-gradient(
+            145deg,
+            white,
+            #fff3f6
+        );
+
+    box-shadow:
+        0 12px 35px
+        rgba(120,40,60,.07);
+
+    transition: .35s;
+}
+
+
+.logic > div:hover {
+
+    transform:
+        translateY(-8px);
+}
+
+
+.logic strong {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 34px;
+
+    color: var(--pink);
+}
+
+
+.logic h3 {
+
+    margin: 8px 0;
+
+    color: var(--rose);
+}
+
+
+.logic p {
+
+    color: #80616a;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+.logic-result {
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    background:
+        #fff1f5;
+
+    border:
+        1px solid #edc0cd;
+}
+
+
+.logic-result h3 {
+
+    color: var(--rose);
+
+}
+
+
+.logic-result p {
+
+    margin-top: 10px;
+
+    color: #80515e;
+
+    line-height: 2;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about {
+
+    background:
+        #fff2f5;
+}
+
+
+.about-box {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 50px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255,255,255,.8);
+
+    border:
+        1px solid #e8c1cc;
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+.about-box h2 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 40px;
+
+    color: var(--rose);
+
+    margin-bottom: 18px;
+}
+
+
+.about-box p {
+
+    line-height: 2;
+
+    color: #805b64;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    padding: 35px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #c9617d,
+            #963b55
+        );
+}
+
+
+footer h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    letter-spacing: 5px;
+}
+
+
+footer p {
+
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    opacity: .85;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1050px) {
+
+    .products {
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+    }
+
+    .hero-circle {
+
+        right: 2%;
+
+        width: 330px;
+
+        height: 330px;
+
+    }
+
+}
+
+
+@media(max-width:800px) {
+
+    nav {
+        display: none;
+    }
+
+
+    .hero {
+
+        min-height: 800px;
+
+    }
+
+
+    .hero-content {
+
+        min-height: 800px;
+
+        align-items: flex-start;
+
+        padding-top: 80px;
+
+    }
+
+
+    .hero-circle {
+
+        top: 540px;
+
+        right: 50%;
+
+        transform:
+            translateX(50%);
+
+    }
+
+
+    .products {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+
+    .logic {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+
+    .sets {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media(max-width:500px) {
+
+    .products {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .logic {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 55px;
+
+    }
+
+
+    .hero-circle {
+
+        width: 280px;
+
+        height: 280px;
+
+    }
+
+
+    .hero-product {
+
+        width: 130px;
+
+        height: 175px;
+
+    }
+
+}
