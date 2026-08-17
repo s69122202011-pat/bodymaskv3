@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BODYMASK PATTY</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Prompt:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header>
+
+    <div class="navbar">
+
+        <a href="#home"
+           class="logo">
+
+            BODYMASK
+
+            <span>PATTY</span>
+
+        </a>
+
+
+        <nav>
+
+            <a href="#products">
+                สินค้า
+            </a>
+
+            <a href="#sets">
+                SET A / SET B
+            </a>
+
+            <a href="#logic">
+                Set Logic
+            </a>
+
+            <a href="#about">
+                เกี่ยวกับเรา
+            </a>
+
+        </nav>
+
+
+        <div class="cart">
+
+            🛍️
+
+            <span id="cartCount">
+                0
+            </span>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section id="home"
+         class="hero">
+
+    <div class="hero-content">
+
+
+        <!-- LEFT -->
+
+        <div>
+
+            <div class="tag">
+                BODY CARE COLLECTION
+            </div>
+
+
+            <h1>
+                BODYMASK
+            </h1>
+
+
+            <h2>
+                PATTY
+            </h2>
+
+
+            <p>
+                ดูแลผิวกายของคุณให้เนียนนุ่ม
+                หอมละมุน และดูสุขภาพดี
+                ด้วย Body Care Collection
+                ที่ออกแบบมาเพื่อการดูแลผิวอย่างหรูหรา
+            </p>
+
+
+            <a href="#products"
+               class="btn">
+
+                เลือกซื้อสินค้า
+
+            </a>
+
+
+            <a href="#products"
+               class="btn outline">
+
+                ดูหมวดหมู่
+
+            </a>
+
+        </div>
+
+
+        <!-- RIGHT : CIRCLE -->
+
+        <div class="hero-circle">
+
+            <div class="circle-ring ring-1"></div>
+
+            <div class="circle-ring ring-2"></div>
+
+
+            <div class="floating-orb orb-1"></div>
+
+            <div class="floating-orb orb-2"></div>
+
+            <div class="floating-orb orb-3"></div>
+
+
+            <div class="hero-product">
+
+                <div class="product-brand">
+
+                    BODY<br>
+                    MASK
+
+                </div>
+
+                <span>
+                    PATTY
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
+
+<section id="products">
+
+    <div class="container">
+
+
+        <div class="title">
+
+            <small>
+                OUR COLLECTION
+            </small>
+
+            <h2>
+                สินค้าแนะนำ
+            </h2>
+
+            <p>
+                คัดสรรผลิตภัณฑ์ Body Care
+                สำหรับการดูแลผิวในทุกวัน
+            </p>
+
+        </div>
+
+
+        <!-- CATEGORY -->
+
+        <div class="categories">
+
+            <button onclick="filterProducts('all')">
+                ทั้งหมด
+            </button>
+
+            <button onclick="filterProducts('mask')">
+                Body Mask
+            </button>
+
+            <button onclick="filterProducts('scrub')">
+                Body Scrub
+            </button>
+
+            <button onclick="filterProducts('lotion')">
+                Body Lotion
+            </button>
+
+            <button onclick="filterProducts('set')">
+                Gift Set
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT LIST -->
+
+        <div id="productList"
+             class="products">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SET A / SET B
+===================================================== -->
+
+<section id="sets"
+         class="pink-section">
+
+    <div class="container">
+
+
+        <div class="title">
+
+            <small>
+                LUXURY COLLECTION
+            </small>
+
+            <h2>
+                BODYMASK SET
+            </h2>
+
+            <p>
+                เลือกเซตที่เหมาะกับการดูแลผิวของคุณ
+            </p>
+
+        </div>
+
+
+        <div class="sets">
+
+
+            <!-- SET A -->
+
+            <div class="set-card">
+
+                <span>
+                    SET A
+                </span>
+
+                <h3>
+                    Glow Set
+                </h3>
+
+                <ul>
+
+                    <li>
+                        ✓ Pink Glow Body Mask
+                    </li>
+
+                    <li>
+                        ✓ Soft Skin Body Scrub
+                    </li>
+
+                    <li>
+                        ✓ Moisture Body Lotion
+                    </li>
+
+                </ul>
+
+
+                <h4>
+
+                    ฿699
+
+                    <del>
+                        ฿847
+                    </del>
+
+                </h4>
+
+
+                <button onclick="addSet('SET A - Glow Set',699)">
+                    เพิ่ม SET A
+                </button>
+
+            </div>
+
+
+
+            <!-- SET B -->
+
+            <div class="set-card">
+
+                <span>
+                    SET B
+                </span>
+
+                <h3>
+                    Premium Set
+                </h3>
+
+                <ul>
+
+                    <li>
+                        ✓ Pink Glow Body Mask
+                    </li>
+
+                    <li>
+                        ✓ Soft Skin Body Scrub
+                    </li>
+
+                    <li>
+                        ✓ Moisture Body Lotion
+                    </li>
+
+                    <li>
+                        ✓ Premium Gift Packaging
+                    </li>
+
+                </ul>
+
+
+                <h4>
+
+                    ฿899
+
+                    <del>
+                        ฿1,136
+                    </del>
+
+                </h4>
+
+
+                <button onclick="addSet('SET B - Premium Set',899)">
+                    เพิ่ม SET B
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SET LOGIC
+===================================================== -->
+
+<section id="logic">
+
+    <div class="container">
+
+
+        <div class="title">
+
+            <small>
+                DISCRETE MATHEMATICS
+            </small>
+
+            <h2>
+                Set Logic
+            </h2>
+
+            <p>
+                การประยุกต์ใช้ Set Theory
+                กับระบบสินค้า BODYMASK
+            </p>
+
+        </div>
+
+
+        <div class="logic">
+
+
+            <div>
+
+                <strong>
+                    ∪
+                </strong>
+
+                <h3>
+                    Union
+                </h3>
+
+                <p>
+                    รวมสินค้าใน Set A และ Set B
+                    เข้าด้วยกัน โดยไม่แสดงข้อมูลซ้ำ
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    ∩
+                </strong>
+
+                <h3>
+                    Intersection
+                </h3>
+
+                <p>
+                    แสดงสินค้าที่อยู่ทั้งใน
+                    Set A และ Set B
+                    เช่น Body Mask และ Body Scrub
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    −
+                </strong>
+
+                <h3>
+                    Difference
+                </h3>
+
+                <p>
+                    แสดงสินค้าที่อยู่ใน Set A
+                    แต่ไม่มีอยู่ใน Set B
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    IF
+                </strong>
+
+                <h3>
+                    If / Else
+                </h3>
+
+                <p>
+                    ใช้ตรวจสอบเงื่อนไข เช่น
+                    ถ้าราคามากกว่า 500 บาท
+                    ให้แสดงข้อความ Premium
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESULT -->
+
+        <div class="logic-result">
+
+            <h3>
+                ผลการคำนวณ Set
+            </h3>
+
+            <p id="logicResult">
+                กำลังคำนวณ...
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about"
+         class="about">
+
+    <div class="container">
+
+        <div class="about-box">
+
+            <h2>
+                About BODYMASK PATTY
+            </h2>
+
+            <p>
+
+                BODYMASK PATTY
+                คือแบรนด์ Body Care
+                ที่เน้นการดูแลผิวกาย
+                ให้ดูเรียบเนียน นุ่ม
+                และมีสุขภาพดี
+
+                <br><br>
+
+                เว็บไซต์นี้ออกแบบด้วยแนวคิด
+                Luxury Beauty
+                โดยใช้โทนสีชมพู Rose Pink
+                ผสมกับสีทอง
+                เพื่อสร้างภาพลักษณ์
+                ที่ดูหรูหราและพรีเมียม
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <h3>
+        BODYMASK PATTY
+    </h3>
+
+    <p>
+        © 2024 BODYMASK PATTY.
+        All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
